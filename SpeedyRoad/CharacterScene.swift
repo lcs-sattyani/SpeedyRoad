@@ -1,5 +1,5 @@
 //
-//  GameScene.swift
+//  CharacterScene.swift
 //  SpeedyRoad
 //
 //  Created by Attyani, Sawsan on 2020-05-26.
@@ -9,18 +9,18 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class CharacterScene: SKScene {
     
     
     override func didMove(to view: SKView) {
         
         
-        backgroundColor = SKColor.black
+        backgroundColor = SKColor.blue
         
         
         let title = SKLabelNode(fontNamed: "Big Caslon Medium")
         title.color = .white
-        title.text = "Speedy Road"
+        title.text = "Character Scene"
         title.fontSize = 64
         title.position = CGPoint(x: size.width / 2, y: size.height / 2)
         addChild(title)
