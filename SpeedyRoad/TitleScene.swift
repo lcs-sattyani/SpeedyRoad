@@ -11,7 +11,7 @@ import GameplayKit
 
 class TitleScene: SKScene {
     
-    
+     let strawberry = SKSpriteNode(imageNamed: "strawberry")
     override func didMove(to view: SKView) {
         
         
@@ -20,12 +20,18 @@ class TitleScene: SKScene {
         
         let title = SKLabelNode(fontNamed: "Big Caslon Medium")
         title.color = .white
-        title.text = "Speedy Road"
+        title.text = "Fast Food"
         title.fontSize = 64
         title.position = CGPoint(x: size.width / 2, y: size.height / 2)
         addChild(title)
         
+       
         
+        
+      strawberry.position = CGPoint(x: 45, y: 200)
+        strawberry.zPosition = 10
+        addChild(strawberry)
+
     }
     
     

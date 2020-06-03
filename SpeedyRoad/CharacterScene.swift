@@ -22,7 +22,7 @@ class CharacterScene: SKScene {
         title.color = .white
         title.text = "Character Scene"
         title.fontSize = 64
-        title.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        title.position = CGPoint(x: size.width / 2, y: size.height - 100)
         addChild(title)
         
         
