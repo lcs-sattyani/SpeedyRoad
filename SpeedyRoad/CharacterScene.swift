@@ -78,15 +78,36 @@ class CharacterScene: SKScene {
         let location = touch.location(in: self)
         let tappedNodes = nodes(at: location)
         
-        if tappedNodes.contains(title) {
+        // Go to the game scene
+        if tappedNodes.contains(strawberry) {
+            
             // 1
             let gameScene = GameScene(size: size)
             gameScene.scaleMode = scaleMode
+            gameScene.selectedCharacter = 1
             // 2
             let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
             // 3
             view?.presentScene(gameScene, transition: reveal)
 
+        } else if tappedNodes.contains(mushroom) {
+            // 1
+            let gameScene = GameScene(size: size)
+            gameScene.scaleMode = scaleMode
+            gameScene.selectedCharacter = 2
+            // 2
+            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+            // 3
+            view?.presentScene(gameScene, transition: reveal)
+        } else if tappedNodes.contains(tomato) {
+            // 1
+            let gameScene = GameScene(size: size)
+            gameScene.scaleMode = scaleMode
+            gameScene.selectedCharacter = 3
+            // 2
+            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+            // 3
+            view?.presentScene(gameScene, transition: reveal)
         }
         
         
