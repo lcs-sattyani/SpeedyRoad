@@ -12,18 +12,40 @@ import GameplayKit
 class CharacterScene: SKScene {
     
     let title = SKLabelNode(fontNamed: "Big Caslon Medium")
+    let strawberry = SKSpriteNode(imageNamed: "strawberry")
+    let mushroom = SKSpriteNode(imageNamed: "mushroom")
+    let tomato = SKSpriteNode(imageNamed: "tomato")
 
+    
+    
     override func didMove(to view: SKView) {
         
         
         backgroundColor = SKColor.blue
         
-        
+        // Showing the title
         title.color = .white
         title.text = "Character Scene"
         title.fontSize = 64
         title.position = CGPoint(x: size.width / 2, y: size.height - 100)
         addChild(title)
+        
+        // Add the strawberry
+        strawberry.position = CGPoint(x: size.width / 4, y: size.height / 2)
+        addChild(strawberry)
+        let quadruple = SKAction.scale(by: 4, duration:0)
+        strawberry.run(quadruple)
+
+        // Add the mushroom
+        mushroom.position = CGPoint(x: size.width / 4 * 2, y: size.height / 2)
+        addChild(mushroom)
+        mushroom.run(quadruple)
+
+        // Add the tomato
+        tomato.position = CGPoint(x: size.width / 4 * 3, y: size.height / 2)
+        addChild(tomato)
+        tomato.run(quadruple)
+
         
         
     }
