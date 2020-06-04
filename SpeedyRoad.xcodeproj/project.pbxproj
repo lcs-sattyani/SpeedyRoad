@@ -14,6 +14,7 @@
 		55007073247DD7F50038D5D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55007072247DD7F50038D5D3 /* Assets.xcassets */; };
 		55007076247DD7F50038D5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55007074247DD7F50038D5D3 /* LaunchScreen.storyboard */; };
 		5500707E247DDD670038D5D3 /* CharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5500707D247DDD670038D5D3 /* CharacterScene.swift */; };
+		555E5E56248985F50064E108 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555E5E55248985F50064E108 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		55007075247DD7F50038D5D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55007077247DD7F50038D5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5500707D247DDD670038D5D3 /* CharacterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScene.swift; sourceTree = "<group>"; };
+		555E5E55248985F50064E108 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				55007074247DD7F50038D5D3 /* LaunchScreen.storyboard */,
 				55007077247DD7F50038D5D3 /* Info.plist */,
 				5500707D247DDD670038D5D3 /* CharacterScene.swift */,
+				555E5E55248985F50064E108 /* GameScene.swift */,
 			);
 			path = SpeedyRoad;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555E5E56248985F50064E108 /* GameScene.swift in Sources */,
 				5500706C247DD7E50038D5D3 /* TitleScene.swift in Sources */,
 				5500706E247DD7E50038D5D3 /* GameViewController.swift in Sources */,
 				5500707E247DDD670038D5D3 /* CharacterScene.swift in Sources */,

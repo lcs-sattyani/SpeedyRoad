@@ -11,14 +11,14 @@ import GameplayKit
 
 class CharacterScene: SKScene {
     
-    
+    let title = SKLabelNode(fontNamed: "Big Caslon Medium")
+
     override func didMove(to view: SKView) {
         
         
         backgroundColor = SKColor.blue
         
         
-        let title = SKLabelNode(fontNamed: "Big Caslon Medium")
         title.color = .white
         title.text = "Character Scene"
         title.fontSize = 64
@@ -47,6 +47,26 @@ class CharacterScene: SKScene {
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        // Once you know the "play game" label has been tapped
+        // Present the "GameScene" scene
+        
+        // this method is called when the user touches the screen
+        guard let touch = touches.first else { return }
+        let location = touch.location(in: self)
+        let tappedNodes = nodes(at: location)
+        
+        if tappedNodes.contains(title) {
+            // 1
+            let gameScene = GameScene(size: size)
+            gameScene.scaleMode = scaleMode
+            // 2
+            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+            // 3
+            view?.presentScene(gameScene, transition: reveal)
+
+        }
+        
         
     }
     
